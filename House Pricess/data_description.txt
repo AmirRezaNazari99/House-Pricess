@@ -1,0 +1,738 @@
+MSSubClass: Identifies the type of dwelling involved in the sale.	
+نوع مسکن درگیر در فروش را مشخص می کند.
+
+        20	1-STORY 1946 & NEWER ALL STYLES
+        30	1-STORY 1945 & OLDER
+        40	1-STORY W/FINISHED ATTIC ALL AGES
+        45	1-1/2 STORY - UNFINISHED ALL AGES
+        50	1-1/2 STORY FINISHED ALL AGES
+        60	2-STORY 1946 & NEWER
+        70	2-STORY 1945 & OLDER
+        75	2-1/2 STORY ALL AGES
+        80	SPLIT OR MULTI-LEVEL
+        85	SPLIT FOYER
+        90	DUPLEX - ALL STYLES AND AGES
+       120	1-STORY PUD (Planned Unit Development) - 1946 & NEWER
+       150	1-1/2 STORY PUD - ALL AGES
+       160	2-STORY PUD - 1946 & NEWER
+       180	PUD - MULTILEVEL - INCL SPLIT LEV/FOYER
+       190	2 FAMILY CONVERSION - ALL STYLES AND AGES
+
+MSZoning: Identifies the general zoning classification of the sale.
+طبقه بندی کلی منطقه بندی فروش را مشخص می کند.
+		
+       A	Agriculture
+       C	Commercial
+       FV	Floating Village Residential
+       I	Industrial
+       RH	Residential High Density
+       RL	Residential Low Density
+       RP	Residential Low Density Park 
+       RM	Residential Medium Density
+	
+LotFrontage: Linear feet of street connected to property
+پاهای خطی خیابان متصل به ملک
+
+LotArea: Lot size in square feet
+اندازه قطعه در فوت مربع
+
+@ Street: Type of road access to property
+نوع جاده دسترسی به ملک
+
+       Grvl	Gravel	
+       Pave	Paved
+change to:
+	1
+	0
+
+  	
+# Alley: Type of alley access to property
+نوع دسترسی کوچه به ملک
+
+       Grvl	Gravel
+       Pave	Paved
+       NA 	No alley access
+		
+@ LotShape: General shape of property
+شکل کلی ملک
+
+       Reg	Regular	
+       IR1	Slightly irregular
+       IR2	Moderately Irregular
+       IR3	Irregular
+change to:
+	40
+	30
+	20
+	10
+       
+
+
+@ LandContour: Flatness of the property
+مسطح بودن ملک
+
+       Lvl	Near Flat/Level	
+       Bnk	Banked - Quick and significant rise from street grade to building
+       HLS	Hillside - Significant slope from side to side
+       Low	Depression
+change to:
+	40
+	30
+	20
+	10
+
+	
+Utilities: Type of utilities available
+نوع تاسیسات موجود
+		
+       AllPub	All public Utilities (E,G,W,& S)	
+       NoSewr	Electricity, Gas, and Water (Septic Tank)
+       NoSeWa	Electricity and Gas Only
+       ELO	Electricity only	
+	
+LotConfig: Lot configuration
+پیکربندی زمین
+       Inside	Inside lot
+       Corner	Corner lot
+       CulDSac	Cul-de-sac
+       FR2	Frontage on 2 sides of property
+       FR3	Frontage on 3 sides of property
+	
+LandSlope: Slope of property
+شیب ملک
+		
+       Gtl	Gentle slope
+       Mod	Moderate Slope	
+       Sev	Severe Slope
+	
+Neighborhood: Physical locations within Ames city limits
+مکان های فیزیکی در محدوده شهر ایمز
+
+       Blmngtn	Bloomington Heights
+       Blueste	Bluestem
+       BrDale	Briardale
+       BrkSide	Brookside
+       ClearCr	Clear Creek
+       CollgCr	College Creek
+       Crawfor	Crawford
+       Edwards	Edwards
+       Gilbert	Gilbert
+       IDOTRR	Iowa DOT and Rail Road
+       MeadowV	Meadow Village
+       Mitchel	Mitchell
+       Names	North Ames
+       NoRidge	Northridge
+       NPkVill	Northpark Villa
+       NridgHt	Northridge Heights
+       NWAmes	Northwest Ames
+       OldTown	Old Town
+       SWISU	South & West of Iowa State University
+       Sawyer	Sawyer
+       SawyerW	Sawyer West
+       Somerst	Somerset
+       StoneBr	Stone Brook
+       Timber	Timberland
+       Veenker	Veenker
+			
+Condition1: Proximity to various conditions
+نزدیکی به شرایط مختلف
+	
+       Artery	Adjacent to arterial street
+       Feedr	Adjacent to feeder street	
+       Norm	Normal	
+       RRNn	Within 200' of North-South Railroad
+       RRAn	Adjacent to North-South Railroad
+       PosN	Near positive off-site feature--park, greenbelt, etc.
+       PosA	Adjacent to postive off-site feature
+       RRNe	Within 200' of East-West Railroad
+       RRAe	Adjacent to East-West Railroad
+	
+Condition2: Proximity to various conditions (if more than one is present)
+نزدیکی به شرایط مختلف (در صورت وجود بیش از یک مورد)	
+       
+       Artery	Adjacent to arterial street
+       Feedr	Adjacent to feeder street	
+       Norm	Normal	
+       RRNn	Within 200' of North-South Railroad
+       RRAn	Adjacent to North-South Railroad
+       PosN	Near positive off-site feature--park, greenbelt, etc.
+       PosA	Adjacent to postive off-site feature
+       RRNe	Within 200' of East-West Railroad
+       RRAe	Adjacent to East-West Railroad
+	
+BldgType: Type of dwelling
+نوع مسکن		
+       1Fam	Single-family Detached	
+       2FmCon	Two-family Conversion; originally built as one-family dwelling
+       Duplx	Duplex
+       TwnhsE	Townhouse End Unit
+       TwnhsI	Townhouse Inside Unit
+	
+HouseStyle: Style of dwelling
+سبک سکونت
+	
+       1Story	One story
+       1.5Fin	One and one-half story: 2nd level finished
+       1.5Unf	One and one-half story: 2nd level unfinished
+       2Story	Two story
+       2.5Fin	Two and one-half story: 2nd level finished
+       2.5Unf	Two and one-half story: 2nd level unfinished
+       SFoyer	Split Foyer
+       SLvl	Split Level
+	
+OverallQual: Rates the overall material and finish of the house
+متریال کلی و پایان خانه را رتبه بندی می کند
+
+       10	Very Excellent
+       9	Excellent
+       8	Very Good
+       7	Good
+       6	Above Average
+       5	Average
+       4	Below Average
+       3	Fair
+       2	Poor
+       1	Very Poor
+	
+OverallCond: Rates the overall condition of the house
+وضعیت کلی خانه را ارزیابی می کند
+
+       10	Very Excellent
+       9	Excellent
+       8	Very Good
+       7	Good
+       6	Above Average	
+       5	Average
+       4	Below Average	
+       3	Fair
+       2	Poor
+       1	Very Poor
+		
+YearBuilt: Original construction date
+تاریخ ساخت اصلی
+
+YearRemodAdd: Remodel date (same as construction date if no remodeling or additions)
+
+RoofStyle: Type of roof
+نوع سقف
+
+       Flat	Flat
+       Gable	Gable
+       Gambrel	Gabrel (Barn)
+       Hip	Hip
+       Mansard	Mansard
+       Shed	Shed
+		
+RoofMatl: Roof material
+مواد سقف
+
+       ClyTile	Clay or Tile
+       CompShg	Standard (Composite) Shingle
+       Membran	Membrane
+       Metal	Metal
+       Roll	Roll
+       Tar&Grv	Gravel & Tar
+       WdShake	Wood Shakes
+       WdShngl	Wood Shingles
+		
+Exterior1st: Exterior covering on house
+پوشش بیرونی خانه
+
+       AsbShng	Asbestos Shingles
+       AsphShn	Asphalt Shingles
+       BrkComm	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       CemntBd	Cement Board
+       HdBoard	Hard Board
+       ImStucc	Imitation Stucco
+       MetalSd	Metal Siding
+       Other	Other
+       Plywood	Plywood
+       PreCast	PreCast	
+       Stone	Stone
+       Stucco	Stucco
+       VinylSd	Vinyl Siding
+       Wd Sdng	Wood Siding
+       WdShing	Wood Shingles
+	
+Exterior2nd: Exterior covering on house (if more than one material)
+پوشش بیرونی خانه (اگر بیش از یک ماده باشد)
+
+       AsbShng	Asbestos Shingles
+       AsphShn	Asphalt Shingles
+       BrkComm	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       CemntBd	Cement Board
+       HdBoard	Hard Board
+       ImStucc	Imitation Stucco
+       MetalSd	Metal Siding
+       Other	Other
+       Plywood	Plywood
+       PreCast	PreCast
+       Stone	Stone
+       Stucco	Stucco
+       VinylSd	Vinyl Siding
+       Wd Sdng	Wood Siding
+       WdShing	Wood Shingles
+	
+MasVnrType: Masonry veneer type
+نوع روکش بنایی
+
+       BrkCmn	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       None	None
+       Stone	Stone
+	
+MasVnrArea: Masonry veneer area in square feet
+سطح روکش بنایی در فوت مربع
+
+# ExterQual: Evaluates the quality of the material on the exterior 
+کیفیت مواد را در نمای بیرونی ارزیابی می کند
+
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+		
+@ ExterCond: Evaluates the present condition of the material on the exterior
+وضعیت فعلی مواد را در نمای بیرونی ارزیابی می کند
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+change to:
+	50
+	40
+	30
+	20
+	4		
+Foundation: Type of foundation
+نوع پی ریزی
+
+       BrkTil	Brick & Tile
+       CBlock	Cinder Block
+       PConc	Poured Contrete	
+       Slab	Slab
+       Stone	Stone
+       Wood	Wood
+		
+@ BsmtQual: Evaluates the height of the basement
+ارتفاع زیرزمین را ارزیابی می کند
+
+       Ex	Excellent (100+ inches)	
+       Gd	Good (90-99 inches)
+       TA	Typical (80-89 inches)
+       Fa	Fair (70-79 inches)
+       Po	Poor (<70 inches
+       NA	No Basement
+change to:
+	60
+	50
+	40
+	30
+	20
+	4
+
+	
+@ BsmtCond: Evaluates the general condition of the basement
+وضعیت عمومی زیرزمین را ارزیابی می کند
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical - slight dampness allowed
+       Fa	Fair - dampness or some cracking or settling
+       Po	Poor - Severe cracking, settling, or wetness
+       NA	No Basement
+change to:
+	60
+	50
+	40
+	30
+	20
+	4
+
+	
+@ BsmtExposure: Refers to walkout or garden level walls
+به دیوارهای پیاده روی یا سطح باغ اشاره دارد
+
+       Gd	Good Exposure
+       Av	Average Exposure (split levels or foyers typically score average or above)	
+       Mn	Mimimum Exposure
+       No	No Exposure
+       NA	No Basement
+change to:
+	50
+	40
+	30
+	10
+	4
+
+	
+@ BsmtFinType1: Rating of basement finished area
+رتبه بندی مساحت تمام شده زیرزمین
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       NA	No Basement
+change to:
+	70
+	60
+	50
+	40
+	30
+	20
+	4
+
+		
+BsmtFinSF1: Type 1 finished square feet
+فوت مربع تمام شده نوع 1
+
+
+@ BsmtFinType2: Rating of basement finished area (if multiple types)
+رتبه بندی مساحت تمام شده زیرزمین (در صورت چند نوع)
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       NA	No Basement
+change to:
+	70
+	60
+	50
+	40
+	30
+	20
+	4		
+
+BsmtFinSF2: Type 2 finished square feet
+فوت مربع تمام شده نوع 2
+
+BsmtUnfSF: Unfinished square feet of basement area
+فوت مربع ناتمام مساحت زیرزمین
+
+TotalBsmtSF: Total square feet of basement area
+کل متر مربع مساحت زیرزمین
+
+Heating: Type of heating
+نوع گرمایش
+
+       Floor	Floor Furnace
+       GasA	Gas forced warm air furnace
+       GasW	Gas hot water or steam heat
+       Grav	Gravity furnace	
+       OthW	Hot water or steam heat other than gas
+       Wall	Wall furnace
+		
+@ HeatingQC: Heating quality and condition
+کیفیت و وضعیت گرمایش
+
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+change to:
+	60
+	50
+	40
+	30
+	20
+
+			
+@ CentralAir: Central air conditioning
+تهویه مطبوع مرکزی
+
+       N	No
+       Y	Yes
+change to:
+	1
+	0
+
+		
+Electrical: Electrical system
+سیستم الکتریکی
+
+       SBrkr	Standard Circuit Breakers & Romex
+       FuseA	Fuse Box over 60 AMP and all Romex wiring (Average)	
+       FuseF	60 AMP Fuse Box and mostly Romex wiring (Fair)
+       FuseP	60 AMP Fuse Box and mostly knob & tube wiring (poor)
+       Mix	Mixed
+		
+1stFlrSF: First Floor square feet
+ طبقه اول متر مربع
+
+2ndFlrSF: Second floor square feet
+طبقه دوم متر مربع
+
+LowQualFinSF: Low quality finished square feet (all floors)
+فوت مربع تمام شده با کیفیت پایین (همه طبقات)
+
+GrLivArea: Above grade (ground) living area square feet
+بالاتر از درجه (زمین) منطقه نشیمن فوت مربع
+
+# BsmtFullBath: Basement full bathrooms
+حمام های کامل زیرزمین
+
+# BsmtHalfBath: Basement half bathrooms
+نیم حمام زیرزمین
+
+# FullBath: Full bathrooms above grade
+حمام کامل بالاتر از طبقه
+
+# HalfBath: Half baths above grade
+نیم حمام بالاتر از طبقه
+
++ AllHalfBath
+
++ AllFullBath
+
+Bedroom: Bedrooms above grade (does NOT include basement bedrooms)
+اتاق خواب های بالاتر ازطبقه (شامل اتاق خواب های زیرزمین نمی شود)
+
+Kitchen: Kitchens above grade
+آشپزخانه های بالاتر از ازطبقه 
+
+@ KitchenQual: Kitchen quality
+کیفیت آشپزخانه
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+changeto:
+	60
+	50
+	40
+	30
+	20
+       	
+TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
+مجموع اتاق های بالاتر از طبقه(شامل حمام نمی شود)
+
+@ Functional: Home functionality (Assume typical unless deductions are warranted)
+عملکرد خانه (معمولی را فرض کنید مگر اینکه کسرها ضمانت داشته باشند)
+
+       Typ	Typical Functionality
+       Min1	Minor Deductions 1
+       Min2	Minor Deductions 2
+       Mod	Moderate Deductions
+       Maj1	Major Deductions 1
+       Maj2	Major Deductions 2
+       Sev	Severely Damaged
+       Sal	Salvage only
+change to:
+	80
+	70
+	60
+	50
+	40
+	30
+	20
+	10
+
+	
+Fireplaces: Number of fireplaces
+تعداد شومینه
+
+
+
+@ FireplaceQu: Fireplace quality
+کیفیت شومینه
+
+       Ex	Excellent - Exceptional Masonry Fireplace
+       Gd	Good - Masonry Fireplace in main level
+       TA	Average - Prefabricated Fireplace in main living area or Masonry Fireplace in basement
+       Fa	Fair - Prefabricated Fireplace in basement
+       Po	Poor - Ben Franklin Stove
+       NA	No Fireplace
+change to:
+	60
+	50
+	40
+	30
+	20
+	4	
+	
+		
+GarageType: Garage location
+محل گاراژ
+		
+       2Types	More than one type of garage
+       Attchd	Attached to home
+       Basment	Basement Garage
+       BuiltIn	Built-In (Garage part of house - typically has room above garage)
+       CarPort	Car Port
+       Detchd	Detached from home
+       NA	No Garage
+		
+# GarageYrBlt: Year garage was built
+سال گاراژ ساخته شد
+
+# GarageFinish: Interior finish of the garage
+نمای داخلی گاراژ
+
+       Fin	Finished
+       RFn	Rough Finished	
+       Unf	Unfinished
+       NA	No Garage
+		
+# GarageCars: Size of garage in car capacity
+اندازه گاراژ در ظرفیت ماشین
+
+# GarageArea: Size of garage in square feet
+اندازه گاراژ در فوت مربع
+===============
++ GarageAreaPerCar:
+
+
+
+
+@ GarageQual: Garage quality
+کیفیت گاراژ
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+change to:
+	60
+	50
+	40
+	30
+	20
+	4	
+		
+@ GarageCond: Garage condition
+وضعیت گاراژ
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+change to:
+
+	60
+	50
+	40
+	30
+	20
+	4	
+	
+@ PavedDrive: Paved driveway
+راهروی آسفالت شده
+
+       Y	Paved 
+       P	Partial Pavement
+       N	Dirt/Gravel
+change to:
+	20
+	10
+	2
+
+	
+WoodDeckSF: Wood deck area in square feet
+مساحت بالکون چوبی در متر مربع
+
+# OpenPorchSF: Open porch area in square feet
+مساحت ایوان باز در متر مربع
+
+# EnclosedPorch: Enclosed porch area in square feet
+مساحت ایوان محصور به متر مربع
+
+# 3SsnPorch: Three season porch area in square feet
+مساحت ایوان سه فصل به متر مربع
+
+# ScreenPorch: Screen porch area in square feet
+مساحت ایوان پرده در فوت مربع
+
++ SumPorch: مساحت کل ایوان
+
+PoolArea: Pool area in square feet
+مساحت استخر در فوت مربع
+
+PoolQC: Pool quality
+کیفیت استخر
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       NA	No Pool
+		
+@ Fence: Fence quality
+کیفیت نرده
+		
+       GdPrv	Good Privacy
+       MnPrv	Minimum Privacy
+       GdWo	Good Wood
+       MnWw	Minimum Wood/Wire
+       NA	No Fence
+change to:
+
+	50
+	40
+	30
+	20
+	4	
+
+
+MiscFeature: Miscellaneous feature not covered in other categories
+ویژگی متفرقه که در دسته های دیگر پوشش داده نمی شود
+		
+       Elev	Elevator
+       Gar2	2nd Garage (if not described in garage section)
+       Othr	Other
+       Shed	Shed (over 100 SF)
+       TenC	Tennis Court
+       NA	None
+		
+MiscVal: $Value of miscellaneous feature
+ارزش ویژگی متفرقه
+
+MoSold: Month Sold (MM)
+ماه فروخته شده (MM)
+
+YrSold: Year Sold (YYYY)
+سال فروش (YYYY)
+
+SaleType: Type of sale
+نوع فروش
+		
+       WD 	Warranty Deed - Conventional
+       CWD	Warranty Deed - Cash
+       VWD	Warranty Deed - VA Loan
+       New	Home just constructed and sold
+       COD	Court Officer Deed/Estate
+       Con	Contract 15% Down payment regular terms
+       ConLw	Contract Low Down payment and low interest
+       ConLI	Contract Low Interest
+       ConLD	Contract Low Down
+       Oth	Other
+		
+SaleCondition: Condition of sale
+شرایط فروش
+
+       Normal	Normal Sale
+       Abnorml	Abnormal Sale -  trade, foreclosure, short sale
+       AdjLand	Adjoining Land Purchase
+       Alloca	Allocation - two linked properties with separate deeds, typically condo with a garage unit	
+       Family	Sale between family members
+       Partial	Home was not completed when last assessed (associated with New Homes)
